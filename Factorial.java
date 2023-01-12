@@ -9,6 +9,7 @@ public class Factorial {
         * 0! = 1
         *
         *n! = n(n-1)!
+        * in this case the recursive algorithm uses more memory than the iterative one
         */
 
         // Scanner input = new Scanner(System.in);
