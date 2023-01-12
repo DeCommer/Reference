@@ -3,7 +3,7 @@ package SortingAlgorithms;
 public class ShellSort {
     public static void main(String[] args) {
 
-        int[] intArray = {20, 35, -15, 7, 55, -22};
+        int[] intArray = {20, 43, -19, 7, 1, -79};
 
         for(int gap = intArray.length / 2; gap > 0; gap /= 2) {
 

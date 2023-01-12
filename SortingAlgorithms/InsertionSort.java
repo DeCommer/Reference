@@ -14,7 +14,7 @@ public class InsertionSort {
 
     public static void main(String[] args) {
         
-        int[] intArray = {20, 35, -15, 7, 55, 1, -22};
+        int[] intArray = {20, 43, -19, 7, 1, -79};
         
 
         for (int fUIdx = 1; fUIdx < intArray.length; fUIdx++) { // Starts at one because algorithm assumes 0 is sorted

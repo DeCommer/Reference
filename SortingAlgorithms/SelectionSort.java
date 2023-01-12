@@ -11,7 +11,7 @@ package SortingAlgorithms;
 public class SelectionSort {
     public static void main(String[] args) {
         
-        int[] intArray = {20, 35, -15, 7, 55, 1, -22};
+        int[] intArray = {20, 43, -19, 7, 1, -79};
 
         for (int lastUnsortedIndex = intArray.length - 1; lastUnsortedIndex > 0; // loop one
                 lastUnsortedIndex--) {
