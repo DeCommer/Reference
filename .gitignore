@@ -1,0 +1,6 @@
+.metals
+*.metals
+.vscode
+.metals/metals.log
+*.log
+
