@@ -1,4 +1,4 @@
-class Basics { //Class name must have same exact name as file, is case sensitive
+class DataTypes { //Class name must have same exact name as file, is case sensitive
   public static void main(String[] args) { //This is the next step of creating a java program
 
     // Variables
