@@ -19,7 +19,6 @@ public class MergeSort {
         for(int i = 0; i < intArray.length; i++) {
             mergeSort(intArray, 0, intArray.length);
         }
-
 /*         for(int i = 0; i < intArray.length; i++) {
             System.out.print(intArray[i] + " ");
         } */
@@ -29,11 +28,12 @@ public class MergeSort {
     public static void mergeSort(int[] input, int start, int end) {
         if (end - start < 2) {
             return;
+        } else {
+            int mid = (start + end) / 2; //partitions the array
+            mergeSort(input, start, mid); //recursive call that stars the party with left array
+            mergeSort(input, mid, end); // deals with right array
+            merge(input, start, mid, end);
         }
-        int mid = (start + end) / 2; //partitions the array
-        mergeSort(input, start, mid); //recursive call that stars the party with left array
-        mergeSort(input, mid, end); // deals with right array
-        merge(input, start, mid, end);
     }
 
     public static void merge(int[] input, int start, int mid, int end) { // merges sorted partitioned arrays
