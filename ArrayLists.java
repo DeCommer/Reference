@@ -25,7 +25,7 @@ public class ArrayLists {
         numbers.add(0);
         numbers.add(6);
         numbers.add(4);
-        numbers.add(1);
+        numbers.add(1);   
 
         System.out.println(numbers.size());
         numbers.sort(Comparator.naturalOrder());
@@ -39,7 +39,7 @@ public class ArrayLists {
  
         System.out.println(numbers.toString()); //returns entire list
         //System.out.println(numbers.get(0)); returns a specific index
-        
+
         guests.forEach(guest -> {
             System.out.println("Hello, " + guest);
         });
@@ -55,5 +55,4 @@ public class ArrayLists {
         }
         input.close();
     }
-
 }
