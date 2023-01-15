@@ -1,13 +1,23 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Misc {
-
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         
-        System.out.println(Arrays.toString(reverseArray(320410)));
-        System.out.println( isLeapYear(2012));
-    }
+        System.out.print("Enter a year: ");
+        int nYear = input.nextInt();
 
+        System.out.println(Arrays.toString(reverseArray(320410)));
+
+        if(isLeapYear(nYear) == true) {
+            System.out.println(nYear + " is a leap year");
+        } else {
+            System.out.println(nYear + " is not a leap year");
+        }
+
+        input.close();
+    }
 /*
  * Changes a long to a string
  * changes n to int
@@ -23,7 +33,7 @@ public class Misc {
         }
         return digits;
       }
-
+//Checks is a given year is a leap year
     public static boolean isLeapYear(int year){
         if (year % 4 == 0) {
         if (year % 100 == 0) {
