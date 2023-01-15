@@ -4,12 +4,17 @@ public class Misc {
 
     public static void main(String[] args) {
         
-        System.out.println(Arrays.toString(digitize(320410)));
+        System.out.println(Arrays.toString(reverseArray(320410)));
+        System.out.println( isLeapYear(2012));
     }
 
-    
-
-    public static int[] digitize(long n) {
+/*
+ * Changes a long to a string
+ * changes n to int
+ * itereates over array
+ * and reverses output array
+ */
+    public static int[] reverseArray(long n) {
         String numStr = String.valueOf(n); 
         int digits[] = new int[numStr.length()];
         int counter = 0;
@@ -18,4 +23,21 @@ public class Misc {
         }
         return digits;
       }
+
+    public static boolean isLeapYear(int year){
+        if (year % 4 == 0) {
+        if (year % 100 == 0) {
+                if (year % 400 == 0) {
+                return true;
+            }else {
+                return false;
+            }
+        }else {
+            return true;
+        }
+        }
+        else {
+            return false;
+        }
+    }
 }
