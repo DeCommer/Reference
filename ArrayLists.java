@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Comparator;
 import java.util.Scanner;
 
@@ -55,4 +56,20 @@ public class ArrayLists {
         }
         input.close();
     }
+// List Filtering
+    public static List<Object> filterList(final List<Object> list) {
+      
+        List<Object> output = new ArrayList<Object>();
+         for (Object element : list) {
+            if (element instanceof Integer) {
+                   output.add((Integer) element);
+               }
+         }
+       
+       return output;
+     }
+ 
 }
+
+
+  
