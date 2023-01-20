@@ -4,3 +4,6 @@
 .metals/metals.log
 *.log
 
+*.class
+
+

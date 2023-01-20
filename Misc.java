@@ -3,19 +3,20 @@ import java.util.Scanner;
 
 public class Misc {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in); //Scanner
         
-        System.out.print("Enter a year: ");
+/*         System.out.print("Enter a year: ");
         int nYear = input.nextInt();
-
-        System.out.println(Arrays.toString(reverseArray(320410)));
 
         if(isLeapYear(nYear) == true) {
             System.out.println(nYear + " is a leap year");
         } else {
             System.out.println(nYear + " is not a leap year");
-        }
+        } */
+        
+        System.out.println(Arrays.toString(reverseArray(320410)));
 
+        System.out.println(reverseString("Joseph DeCommer"));
         input.close();
     }
 /*
@@ -24,7 +25,7 @@ public class Misc {
  * itereates over array
  * and reverses output array
  */
-    public static int[] reverseArray(long n) {
+    public static int[] reverseArray(long n) { //reverses array
         String numStr = String.valueOf(n); 
         int digits[] = new int[numStr.length()];
         int counter = 0;
@@ -33,6 +34,16 @@ public class Misc {
         }
         return digits;
       }
+
+    public static String reverseString(String s) {
+        char ch;
+        String newStr = "";
+        for(int i = 0; i < s.length(); i++) {
+            ch = s.charAt(i);
+            newStr = ch+newStr;
+        }
+        return newStr;
+    }
 //Checks is a given year is a leap year
     public static boolean isLeapYear(int year){
         if (year % 4 == 0) {
