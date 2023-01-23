@@ -1,5 +1,8 @@
 package SortingAlgorithms;
 
+import java.util.Arrays;
+import java.util.SortedSet;
+
 /*
  *  In place (No new array needed)
  * O(n^2) (Quadratic) Time complexity
@@ -11,21 +14,21 @@ package SortingAlgorithms;
 public class SelectionSort {
     public static void main(String[] args) {
         
-        int[] intArray = {20, 43, -19, 7, 1, -79};
+        int[] arr = {4, 19, -10, -43, 79};
 
-        for (int lastUnsortedIndex = intArray.length - 1; lastUnsortedIndex > 0; // loop one
+        for (int lastUnsortedIndex = arr.length - 1; lastUnsortedIndex > 0; // loop one
                 lastUnsortedIndex--) {
                     int largest = 0;
                     for(int i = 1; i <= lastUnsortedIndex; i++) { //loop 2
-                        if(intArray[i] > intArray[largest]) {
+                        if(arr[i] > arr[largest]) {
                             largest = i;
                         }
                     }
-                    swap(intArray, largest, lastUnsortedIndex);
+                    swap(arr, largest, lastUnsortedIndex);
                 }
 
-        for(int i = 0; i < intArray.length; i++) {
-            System.out.print(intArray[i] +" ");
+        for(int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
     }
 
@@ -37,5 +40,9 @@ public class SelectionSort {
         int temp = array[i];
         array[i] = array[j];
         array[j] = temp;
+            
+
     }
+
+
 }
