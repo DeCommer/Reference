@@ -7,7 +7,7 @@ public class ArraysRef {
             intArray[1] = 35;
             intArray[2] = -15;
 
-            String strArr[] = {"Word", "Word", "Word"};
+            //String strArr[] = {"Word", "Word", "Word"};
 
         int index = -1;
         for(int i=0; i < intArray.length; i++) {
