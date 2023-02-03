@@ -5,12 +5,11 @@ public class StringReverse
 {
     public static void main(String[] args)
     {
-        String string = "I evol ym !ecnatsnoC";
-        System.out.println(reverseWords(string));
+        String string = "I love my Constance";
+        System.out.println(reverseStr(string));
     }
 
-    public static String reverseStr(String input)
-    {
+    public static String reverseStr(String input){ //reverses word and letter order
         if(input.equals("")) 
         {
             return "";
@@ -27,7 +26,7 @@ public class StringReverse
         return reversed;
     } */
 
-    public static String reverseWords(final String original) //function
+    public static String reverseWords(final String original) //Does not reverse word order
     { 
       String[] array = original.split(" ");
       if(array.length == 0) 
@@ -40,4 +39,13 @@ public class StringReverse
       }
       return String.join(" ",array);
     }
+
+    public static String reverseStringSimple(String string) { // reverses word and letter order
+        String reverse = "";
+        for(int i = 0; i < string.length(); i++) {
+            reverse = string.charAt(i) + reverse;
+        }
+        return reverse;
+    }
+
 }
