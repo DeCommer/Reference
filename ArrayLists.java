@@ -6,9 +6,10 @@ import java.util.Scanner;
 public class ArrayLists {
 
     public static void main(String[] args) {
-        ArrayList<String> guests = new ArrayList<>();
-        ArrayList<Integer> numbers = new ArrayList<>();
+        ArrayList<String> guests = new ArrayList<>(); //declaring list
+        ArrayList<Integer> numbers = new ArrayList<>(); // declaring list
 
+        //adding elements
         guests.add("Constance");
         guests.add("Joseph");
         guests.add("Spoons");
@@ -55,6 +56,8 @@ public class ArrayLists {
             System.out.println("Get outta here!");
         }
         input.close();
+
+
     }
 // List Filtering
     public static List<Object> filterList(final List<Object> list) {

@@ -1,4 +1,4 @@
-import java.util.*;
+//import java.util.*;
 
 /*
  * 
@@ -29,6 +29,16 @@ import java.util.*;
 
 public class InterviewQuestions {
     public static void main(String[] args) {
+        reverseStr();
+    }
+    /*
+     * Declare a string
+     * declare empty string
+     * loop through string length
+     * add characters to empty string 
+     * 
+     */
+    public static void reverseStr() {
         String str = "Joseph DeCommer";
         String reverse = "";
         for(int i = 0; i < str.length(); i++) {
@@ -36,4 +46,6 @@ public class InterviewQuestions {
         }
         System.out.println(reverse);
     }
+
+
 }
