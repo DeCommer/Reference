@@ -57,7 +57,31 @@ public class ArrayLists {
         }
         input.close();
 
+        //Create an ArrayList from another collection using 
+        //ArrayList(collector c) constructor.
 
+        // create array list object
+        List<Integer> firstFivePrimes = new ArrayList<>();
+        firstFivePrimes.add(2);
+        firstFivePrimes.add(3);
+        firstFivePrimes.add(5);
+        firstFivePrimes.add(7);
+        firstFivePrimes.add(11);
+
+        //Add list to another
+
+        List<Integer> firstTenPrimes = new ArrayList<>(firstFivePrimes);
+
+        List<Integer> nextFivePrimes = new ArrayList<>();
+        nextFivePrimes.add(13);
+        nextFivePrimes.add(17);
+        nextFivePrimes.add(19);
+        nextFivePrimes.add(23);
+        nextFivePrimes.add(29);
+
+        firstTenPrimes.addAll(nextFivePrimes);
+
+        System.out.println(firstTenPrimes);
     }
 // List Filtering
     public static List<Object> filterList(final List<Object> list) {
