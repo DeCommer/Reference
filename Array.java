@@ -15,7 +15,7 @@ public class Array {
 
 
         int index = -1;
-        for(int i=0; i < intArray.length; i++) {
+        for(int i = 0; i < intArray.length; i++) {
             if(intArray[i] == 20) {
                 index = i;
                 break;
@@ -28,6 +28,17 @@ public class Array {
         System.out.println("This is the original array " + Arrays.toString(intArray));
         Arrays.sort(intArray);        
         System.out.println("This is the soted array " + Arrays.toString(intArray));
-        
+
+        //reverse int array
+        int[] intArr = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100}; //declare string
+        System.out.println("Original array: " + Arrays.toString(intArr));
+        int temp; //declare temp to hold reversed values
+        for(int i = 0; i < intArr.length / 2; i++) { // for loop that is the length of initial array divided by 2
+            temp = intArr[i]; //temp becomes 10, 20, 30, 40, and 50
+            
+            intArr[i] = intArr[intArr.length - i - 1]; // intArr[i] becomes 100, 90,80, 70, and 60
+            intArr[intArr.length - i - 1] = temp; // putting temp and intArr together, but reversed
+        }
+        System.out.println("Reversed array: " + Arrays.toString(intArr));
     }
 }
