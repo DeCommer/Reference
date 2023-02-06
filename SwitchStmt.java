@@ -2,7 +2,7 @@ public class SwitchStmt {
 
     public static void main(String[] args) {
  
-        String[] names = {"Joseph", "Constance", "Spoons", "Shit"};
+        String[] names = {"Joseph", "Constance", "Spoons"};
  
         int likes = names.length;
 
