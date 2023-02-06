@@ -2,6 +2,8 @@
 public class Series {
     public static void main(String[] args) {
 
+		//series = 1 + 1/4 + 1/7 + 1/10 + 1/13 + 1/16...
+
         int n = 15;
         System.out.println(sumSeries(n));
         
