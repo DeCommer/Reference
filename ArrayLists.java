@@ -51,7 +51,7 @@ public class ArrayLists {
         System.out.print("What is your name? ");
         String name = input.nextLine();
         if(guests.contains(name)) {
-            System.out.println("C'mon in!");
+            System.out.println("You are on the list");
         }else {
             System.out.println("Get outta here!");
         }
