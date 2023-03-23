@@ -10,5 +10,7 @@ public class Probability {
         boolean probFalse = rand.nextInt(10) == 1; //10% chance of being true
         System.out.print(unknown + " " + probFalse);
 
+        //test
+
     }
 }
