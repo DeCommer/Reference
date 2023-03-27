@@ -1,4 +1,4 @@
-//import java.util.Arrays;
+import java.util.Arrays;
 import java.util.Random;
 
 public class RandomArray
@@ -6,7 +6,7 @@ public class RandomArray
     
     public static void main(String[] args)
     {
-
+        System.out.println(Arrays.toString(randomArray(null)));
     } 
 
     public static int[] randomArray(int[] random) 
