@@ -15,7 +15,7 @@ public class RandomArray
         int[] randArr = new int[5];
         for(int i = 0; i < randArr.length; i++)
         {
-            randArr[i] = rand.nextInt(1, 6);
+            randArr[i] = rand.nextInt(1, 99);
         }
         return randArr;
     }
