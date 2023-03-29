@@ -18,5 +18,4 @@ public class calc {
 
         input.close();
     }
-
 }
