@@ -40,5 +40,36 @@ public class Array {
             intArr[intArr.length - i - 1] = temp; // putting temp and intArr together, but reversed
         }
         System.out.println("Reversed array: " + Arrays.toString(intArr));
+
+        //Multidimensional arrays
+        int multArr[][] = new int[3][4];
+
+        for(int i = 0; i < 3; i++) {
+            for(int j= 0; j < 4; j++) {
+                multArr[i][j] = (int)(Math.random() * 100);
+                System.out.print(multArr[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        for(int n[] : multArr) { //enhanced for loop (does same as above)
+            for(int m : n) {
+                System.out.print(m + " ");
+            }
+            System.out.println();
+        }
+
+        int[] numbers = new int[4]; //enhanced for loop 
+
+        numbers[0] = 5;
+        numbers[1] = 12;
+        numbers[2] = 17;
+        numbers[3] = 9;
+
+        for(int n : numbers) {
+            System.out.print(n + ", ");
+        }
+
+
     }
 }
