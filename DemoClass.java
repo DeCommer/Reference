@@ -30,5 +30,4 @@ public class DemoClass {
     public int getDayLength() {
         return dayLength;
     }
-    
 }

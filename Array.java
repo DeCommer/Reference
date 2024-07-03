@@ -13,6 +13,7 @@ public class Array {
             strArr[1] = "Joseph";
             strArr[2] = "Spoons";
 
+            System.out.println(strArr[0]);
 
         int index = -1;
         for(int i = 0; i < intArray.length; i++) {
