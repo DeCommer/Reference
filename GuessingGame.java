@@ -17,12 +17,12 @@ public class GuessingGame {
 
             if(answer == secretNum) 
             {
-                System.out.println("\nYou got it right, in " + numOfGuesses + " guesses. Damn dirty human!");
+                System.out.println("\nYou got it in " + numOfGuesses + " guesses. Damn dirty human!");
                 System.out.println("Good bye.");
                 condition = true;
             } else 
             {
-                System.out.println("Keep trying smelly human.");
+                System.out.println("Keep trying smelly.");
                 condition = false;
                 numOfGuesses++;
                 System.out.println("Number of guesses: " + numOfGuesses);
