@@ -6,20 +6,20 @@ import java.util.Scanner;
 public class ArrayLists {
 
     public static void main(String[] args) {
-        ArrayList<String> guests = new ArrayList<>(); //declaring list
+        ArrayList<String> names = new ArrayList<>(); //declaring list
         ArrayList<Integer> numbers = new ArrayList<>(); // declaring list
 
         //adding elements
-        guests.add("Constance");
-        guests.add("Joseph");
-        guests.add("Spoons");
-        guests.add("Dooder");
+        names.add("Constance");
+        names.add("Joseph");
+        names.add("Spoons");
+        names.add("Dooder");
 
-        guests.remove(String.valueOf("Dooder"));
+        names.remove(String.valueOf("Dooder"));
 
-        System.out.println(guests.toString());
-        System.out.println(guests.get(0));
-        System.out.println(guests.contains("Spoons"));
+        System.out.println(names.toString());
+        System.out.println(names.get(0));
+        System.out.println(names.contains("Spoons"));
 
         numbers.add(2);
         numbers.add(5);
@@ -42,7 +42,7 @@ public class ArrayLists {
         System.out.println(numbers.toString()); //returns entire list
         //System.out.println(numbers.get(0)); returns a specific index
 
-        guests.forEach(guest -> {
+        names.forEach(guest -> {
             System.out.println("Hello, " + guest);
         });
 
@@ -50,7 +50,7 @@ public class ArrayLists {
         Scanner input = new Scanner(System.in);
         System.out.print("What is your name? ");
         String name = input.nextLine();
-        if(guests.contains(name)) {
+        if(names.contains(name)) {
             System.out.println("You are on the list");
         }else {
             System.out.println("Get outta here!");

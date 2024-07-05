@@ -30,7 +30,7 @@ class DataTypes { //Class name must have same exact name as file, is case sensit
     System.out.println(--eightBytes); //Decrement
 
     //Concatenation
-    System.out.println("Senetences can be joined with variables or values " + "\"" + varString + "\" " + fourBytes);
+    System.out.println("Sentences can be joined with variables or values " + "\"" + varString + "\" " + fourBytes);
     
     //Conditionals
     System.out.println(varDouble < varFloat);
